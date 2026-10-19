@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bjsim"
+version = "1.0.0"
+description = "Monte Carlo study of Hi-Lo card counting: edge, Kelly bet sizing and risk of ruin"
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Nicolas Muratore" }]
+requires-python = ">=3.10"
+dependencies = ["numpy", "matplotlib"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
